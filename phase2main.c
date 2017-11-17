@@ -1,23 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-	int select;
-	switch (select)
-	{
-	case 0:
-		break;
-	case 1:
-		break;
-	case 2:
-		break;
-	case 3:
-		break;
-	case 4:
-		break;
-	case 5:
-		break;
-
-	}
+	char choice[10];
+	scanf('%d', choice);
+	if (strcmp )
 	return 0;
 }
