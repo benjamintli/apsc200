@@ -8,7 +8,13 @@ typedef struct queue {
 
 }queue;
 
-void removeFront();
+void removeFront(){
+	struct Node* temp = front;
+	if(front!= NULL){
+		front = front->next;
+	}
+	free(temp);
+}
 
 void addEnd();
 
