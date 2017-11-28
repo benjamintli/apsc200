@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 #pragma warning (disable : 4996)
 
 typedef struct switches {
@@ -22,13 +23,13 @@ void closeUpstream(switches *s, char *select)
 void openDownStream(switches *s, char *select)
 {
 	if (strcmp(select, "AC") == 0){
-		for (int i = 0; i < 4; i++) {
+		for (int i = 1; i < 6; i++) {
 			s->state = 0;
 			s++;
 		}
 	}
 	else if (strcmp(select, "DCM") == 0){
-		for (int i = 0; i < 5; i++) {
+		for (int i = 2; i < 6; i++) {
 			s->state = 0;
 			s++;
 		}
@@ -165,7 +166,7 @@ int main()
 			}
 			else if (strcmp("C", state) == 0)
 			{
-				s[5].state = 1;
+				s[0].state = 1;
 				printf("%s is closed\n", s[0].sName);
 
 			}
